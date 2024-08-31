@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Team | RCTGS</title>
+  
+  <link rel="icon" href="assests/project_images/Be_You_theme.PNG" type="image/svg+xml" />
+<style>
+  
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap");
+
+@mixin mQ($rem) {
+  @media screen and (min-width: $rem) {
+    @content;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f6f1ea; /* Updated background to match the primary color */
+  min-height: 100vh;
+}
+
+h5{
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: top;
+}
+
+section {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  padding-block: min(20vh, 5rem);
+  text-align: center;
+  width: calc(min(90rem, 90%));
+  margin-inline: auto;
+
+  p,
+  h2,
+  h3 {
+    letter-spacing: 0.035rem;
+  }
+
+  p {
+    line-height: 1.7;
+    color: #585858; /* Updated text color for better readability */
+    max-width: 70rem;
+    margin: 0 auto;
+    font-size: clamp(0.9rem, 0.825rem + 0.3vw, 1.2rem);
+  }
+
+  h2 {
+    font-size: clamp(3rem, 2.4286rem + 2.2857vw, 5rem);
+    color: #3c3c3c; /* Slightly darker for better contrast */
+    text-transform: capitalize;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+
+  .cards {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr));
+    gap: 2rem;
+
+    @include mQ(51rem) {
+      gap: 3.5rem;
+    }
+
+    .card {
+      position: relative;
+      text-align: left;
+
+      .social-icon {
+        background: #3c3c3c; /* Updated to a complementary dark color */
+        padding: 1rem 1.75rem;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        color: white;
+
+        i {
+          color: #f6f1ea; /* Updated to primary color for icon */
+          font-size: 1.4rem;
+        }
+
+        &:hover i {
+          color: #d1b8a1; /* Lighter shade of the primary color */
+        }
+      }
+
+      img {
+        filter: grayscale(100%);
+        transition: 0.5s ease;
+
+        &:hover {
+          filter: grayscale(0%);
+        }
+      }
+
+      .card-content-wrapper {
+        margin-left: auto;
+        max-width: 90%;
+
+        .card-content {
+          display: block;
+          background: #ffffff; /* Card background is kept white */
+          transition: 0.5s ease;
+          padding: 4.5rem 2rem 0 3.2rem;
+
+          > div {
+            text-align: right;
+          }
+
+          h3,
+          p {
+            text-transform: capitalize;
+          }
+
+          h3 {
+            font-size: clamp(1.15rem, 1.1071rem + 0.1714vw, 1.3rem);
+            font-weight: 800;
+            color: #3c3c3c; /* Darker color for headings */
+          }
+          p {
+            color: #585858; /* Consistent color with paragraph text */
+            font-size: 0.9rem;
+          }
+
+          svg {
+            display: inline-block;
+            text-align: right;
+            width: 60px;
+            color: #d1b8a1; /* Lighter shade of the primary color */
+          }
+        }
+      }
+
+      /* Hover states */
+      .card-img-wrapper:hover ~ .card-content-wrapper .card-content {
+        background: #d1b8a1; /* Updated hover color */
+        
+        h3,
+        p,
+        svg {
+          color: #ffffff; /* Text color changes to white on hover */
+        }
+      }
+
+      .card-content-wrapper:hover .card-content {
+        background: #d1b8a1; /* Updated hover color */
+        
+        h3,
+        p,
+        svg {
+          color: #ffffff; /* Text color changes to white on hover */
+        }
+      }
+    }
+  }
+}
+
+</style>
+</head>
+<body>
+      <!-- --------------------------------Header contents -->
+    
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('header.html')
+            .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header-container').innerHTML = data;
+                });
+        });
+    </script>
+    <div id="header-container"></div> -->
+    
+    
+    <!-- --------------------------------Header contents -->
+  <section>
+    <h2>our team</h2>
+    <p>Meet the dynamic team of the Rotaract Club of Thane Greenspans for the Rotaract Year 2024-2025, dedicated to making a positive impact and driving community change through their innovative vision and collaborative spirit</p>
+    <div class="cards">
+
+      <!-- CORE -->
+
+      <!-- ayush -->
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img src="assests/GBM pictures-20240827T183728Z-001/GBM pictures/ayush_gbm.jpg" alt="Ayush">
+        </div>
+        <a href="https://www.instagram.com/ayusssssh_/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <div class="card-content-wrapper">
+          <a href="https://www.instagram.com/ayusssssh_/" target="_blank" class="card-content">
+            <h5>Rtr. Ayush Jain </h5>
+            <p>President and PIS Director</p>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+              </svg>
+            </div>
+  
+          </a>
+        </div>
+      </div>
+
+      <!-- kirti -->
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img src="assests/GBM pictures-20240827T183728Z-001/GBM pictures/kirti_gbm.jpg" alt="Kirti">
+        </div>
+        <a href="https://www.instagram.com/kirti_chejara/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <div class="card-content-wrapper">
+          <a href="https://www.instagram.com/kirti_chejara/" target="_blank" class="card-content">
+            <h5>Rtr. Kirti Chejara</h5>
+            <p>Secretary</p>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+              </svg>
+            </div>
+  
+          </a>
+        </div>
+      </div>
+
+      <!-- arpit -->
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img src="assests/GBM pictures-20240827T183728Z-001/GBM pictures/arpit_gbm.JPG" alt="Arpit">
+        </div>
+        <a href="https://www.instagram.com/arpitkhedekar/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <div class="card-content-wrapper">
+          <a href="https://www.instagram.com/arpitkhedekar/" target="_blank" class="card-content">
+            <h5>Rtr. Arpit Khedekar</h5>
+            <p>IPP & SAA</p>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+              </svg>
+            </div>
+  
+          </a>
+        </div>
+      </div>
+
+      <!-- digvijay -->
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img src="assests/GBM pictures-20240827T183728Z-001/GBM pictures/digvijay_gbm_2.jpg" alt="Digvijay">
+        </div>
+        <a href="https://www.instagram.com/digvijay2.9/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <div class="card-content-wrapper">
+          <a href="https://www.instagram.com/digvijay2.9/" target="_blank" class="card-content">
+            <h5>Rtr. Digvijay Kocharekar</h5>
+            <p>Vice President</p>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+              </svg>
+            </div>
+  
+          </a>
+        </div>
+      </div>
+
+      <!-- rishi -->
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img src="assests/GBM pictures-20240827T183728Z-001/GBM pictures/rishi_gbm.jpg" alt="Rishi">
+        </div>
+        <a href="https://www.instagram.com/kotak.rishi/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <div class="card-content-wrapper">
+          <a href="https://www.instagram.com/kotak.rishi/" target="_blank" class="card-content">
+            <h5>Rtr. Rishi Kotak</h5>
+            <p>Vice President</p>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+              </svg>
+            </div>
+  
+          </a>
+        </div>
+      </div>
+
+      <!-- aditya tomar -->
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img src="assests/GBM pictures-20240827T183728Z-001/GBM pictures/Aditya_tomar_gbm.jpg" alt="Aditya">
+        </div>
+        <a href="https://www.instagram.com/adityadtomar/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <div class="card-content-wrapper">
+          <a href="https://www.instagram.com/adityadtomar/" target="_blank" class="card-content">
+            <h5>Rtr. Aditya Tomar</h5>
+            <p>Finance Chair</p>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+              </svg>
+            </div>
+  
+          </a>
+        </div>
+      </div>
+
+      <!-- prayag -->
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img src="assests/GBM pictures-20240827T183728Z-001/GBM pictures/Prayag_Tikekar_gbm.jpg" alt="Prayag">
+        </div>
+        <a href="https://www.instagram.com/inkspire.writes/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <div class="card-content-wrapper">
+          <a href="https://www.instagram.com/inkspire.writes/" target="_blank" class="card-content">
+            <h5>Rtr. Prayag Tikekar</h5>
+            <p>TRS Chair</p>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+              </svg>
+            </div>
+  
+          </a>
+        </div>
+      </div>
+
+
+      <!-- BODS -->
+
+      <!-- kanak -->
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img src="assests/GBM pictures-20240827T183728Z-001/GBM pictures/kanak.jpg" alt="Kanak">
+        </div>
+        <a href="https://www.instagram.com/kanak1303/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <div class="card-content-wrapper">
+          <a href="https://www.instagram.com/kanak1303/" target="_blank" class="card-content">
+            <h5>Rtr. Kanak Gupte </h5>
+            <p>PRM Director</p>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+              </svg>
+            </div>
+  
+          </a>
+        </div>
+      </div>
+
+      <!-- tanmay gupte -->
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img src="assests/GBM pictures-20240827T183728Z-001/GBM pictures/tanmay_gupte.jpg" alt="Tanmay">
+        </div>
+        <a href="https://www.instagram.com/_tanmay2102/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <div class="card-content-wrapper">
+          <a href="https://www.instagram.com/_tanmay2102/" target="_blank" class="card-content">
+            <h5>Rtr. Tanmay Gupte </h5>
+            <p>Community Service</p>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+              </svg>
+            </div>
+  
+          </a>
+        </div>
+      </div>
+
+      <!-- om -->
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img src="assests/GBM pictures-20240827T183728Z-001/GBM pictures/om.jpg" alt="Om">
+        </div>
+        <a href="https://www.instagram.com/_om_18_/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <div class="card-content-wrapper">
+          <a href="https://www.instagram.com/_om_18_/" target="_blank" class="card-content">
+            <h5>Rtr. Om Prabhu </h5>
+            <p>Club Service Director</p>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+              </svg>
+            </div>
+  
+          </a>
+        </div>
+      </div>
+
+      <!-- falak -->
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img src="assests/GBM pictures-20240827T183728Z-001/GBM pictures/falak.jpg" alt="Falak">
+        </div>
+        <a href="https://www.instagram.com/falak_gala/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <div class="card-content-wrapper">
+          <a href="https://www.instagram.com/falak_gala" target="_blank" class="card-content">
+            <h5>Rtr. Falak Gala </h5>
+            <p>CD Director</p>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+              </svg>
+            </div>
+  
+          </a>
+        </div>
+      </div>
+
+      <!-- vedang -->
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img src="assests/GBM pictures-20240827T183728Z-001/GBM pictures/vedang.jpg" alt="Vedang">
+        </div>
+        <a href="https://www.instagram.com/vedang_khatate/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <div class="card-content-wrapper">
+          <a href="https://www.instagram.com/vedang_khatate/" target="_blank" class="card-content">
+            <h5>Rtr. Vedang Khatate </h5>
+            <p>ISD Director</p>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+              </svg>
+            </div>
+  
+          </a>
+        </div>
+      </div>
+
+      <!-- husain -->
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img src="assests/GBM pictures-20240827T183728Z-001/GBM pictures/Husain.JPG" alt="Husain">
+        </div>
+        <a href="https://www.instagram.com/whosane04/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <div class="card-content-wrapper">
+          <a href="https://www.instagram.com/whosane04/" target="_blank" class="card-content">
+            <h5>Rtr. Husain Lokhandwala</h5>
+            <p>PRM Director</p>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+              </svg>
+            </div>
+  
+          </a>
+        </div>
+      </div>
+
+      <!-- aliza -->
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img src="assests/GBM pictures-20240827T183728Z-001/GBM pictures/aliza.jpg" alt="Aliza">
+        </div>
+        <a href="https://www.instagram.com/_.alizaak/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <div class="card-content-wrapper">
+          <a href="https://www.instagram.com/_.alizaak/" target="_blank" class="card-content">
+            <h5>Rtr. Aliza Khan </h5>
+            <p>Digicom Director</p>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+              </svg>
+            </div>
+  
+          </a>
+        </div>
+      </div>
+
+      <!-- pooja -->
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img src="assests/GBM pictures-20240827T183728Z-001/GBM pictures/pooja.jpg" alt="Pooja">
+        </div>
+        <a href="https://www.instagram.com/poojasuryawanshi0111/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <div class="card-content-wrapper">
+          <a href="https://www.instagram.com/poojasuryawanshi0111/" target="_blank" class="card-content">
+            <h5>Rtr. Pooja Suryavanshi </h5>
+            <p>Editorial Director</p>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+              </svg>
+            </div>
+  
+          </a>
+        </div>
+      </div>
+
+
+
+      <!-- GBMSss -->
+
+      <!-- rinklesh -->
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img src="assests/GBM pictures-20240827T183728Z-001/GBM pictures/rinklesh.jpg" alt="Rinklesh">
+        </div>
+        <a href="https://www.instagram.com/rinklesh.bhole/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <div class="card-content-wrapper">
+          <a href="https://www.instagram.com/rinklesh.bhole/" target="_blank" class="card-content">
+            <h5>Rtr. Rinklesh Bhole </h5>
+            <p>GBM</p>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+              </svg>
+            </div>
+  
+          </a>
+        </div>
+      </div>
+
+      <!-- garima -->
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img src="assests/GBM pictures-20240827T183728Z-001/GBM pictures/garima.jpg" alt="Garima">
+        </div>
+        <a href="https://www.instagram.com/garimaxv7/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <div class="card-content-wrapper">
+          <a href="https://www.instagram.com/garimaxv7/" target="_blank" class="card-content">
+            <h5>Rtr. Garima Sharma </h5>
+            <p>GBM</p>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+              </svg>
+            </div>
+  
+          </a>
+        </div>
+      </div>
+
+      <!-- snehal -->
+      <div class="card">x
+        <div class="card-img-wrapper">
+          <img src="assests/GBM pictures-20240827T183728Z-001/GBM pictures/snehal.jpg" alt="Niraj">
+        </div>
+        <a href="https://www.instagram.com/_snehalll__/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <div class="card-content-wrapper">
+          <a href="https://www.instagram.com/_snehalll__/" target="_blank" class="card-content">
+            <h5>Rtr. Snehal Kamble</h5>
+            <p>GBM</p>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+              </svg>
+            </div>
+  
+          </a>
+        </div>
+      </div>
+
+      <!-- niraj -->
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img src="assests/GBM pictures-20240827T183728Z-001/GBM pictures/niraj.jpg" alt="Niraj">
+        </div>
+        <a href="https://www.instagram.com/niraj_kshirsagarr/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <div class="card-content-wrapper">
+          <a href="https://www.instagram.com/niraj_kshirsagarr/" target="_blank" class="card-content">
+            <h5>Rtr. Niraj Kshirsagar</h5>
+            <p>GBM</p>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+              </svg>
+            </div>
+  
+          </a>
+        </div>
+      </div>
+
+      <!-- amsa -->
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img src="assests/GBM pictures-20240827T183728Z-001/GBM pictures/amsa.jpeg" alt="Amsa">
+        </div>
+        <a href="https://www.instagram.com/amsa_konar/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <div class="card-content-wrapper">
+          <a href="https://www.instagram.com/amsa_konar/" target="_blank" class="card-content">
+            <h5>Rtr. Amsa Konar </h5>
+            <p>GBM</p>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+              </svg>
+            </div>
+  
+          </a>
+        </div>
+      </div>
+
+      <!-- shruti -->
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img src="assests/GBM pictures-20240827T183728Z-001/GBM pictures/shruti.jpg" alt="Shruti">
+        </div>
+        <a href="https://www.instagram.com/shrutipai_1403/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <div class="card-content-wrapper">
+          <a href="https://www.instagram.com/shrutipai_1403/" target="_blank" class="card-content">
+            <h5>Rtr. Shruti Pai </h5>
+            <p>GBM</p>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+              </svg>
+            </div>
+  
+          </a>
+        </div>
+      </div>
+
+      <!-- arko -->
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img src="assests/GBM pictures-20240827T183728Z-001/GBM pictures/arko.jpg" alt="Arko">
+        </div>
+        <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+        <div class="card-content-wrapper">
+          <a href="#" class="card-content">
+            <h5>Rtr. Arko Ray </h5>
+            <p>GBM</p>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+              </svg>
+            </div>
+  
+          </a>
+        </div>
+      </div>
+
+      <!-- bhumi -->
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img src="assests/GBM pictures-20240827T183728Z-001/GBM pictures/Bhumi.jpg" alt="Bhumi">
+        </div>
+        <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+        <div class="card-content-wrapper">
+          <a href="#" class="card-content">
+            <h5>Rtr. Bhumi Faria </h5>
+            <p>GBM</p>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+              </svg>
+            </div>
+  
+          </a>
+        </div>
+      </div>
+
+      <!-- anam -->
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img src="assests/GBM pictures-20240827T183728Z-001/GBM pictures/Anam.jpg" alt="Anam">
+        </div>
+        <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+        <div class="card-content-wrapper">
+          <a href="#" class="card-content">
+            <h5>Rtr. Anam Khan </h5>
+            <p>GBM</p>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+              </svg>
+            </div>
+  
+          </a>
+        </div>
+      </div>
+
+      <!-- shreyas masurkar -->
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img src="assests/GBM pictures-20240827T183728Z-001/GBM pictures/Shreyas.jpg" alt="Shreyas">
+        </div>
+        <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+        <div class="card-content-wrapper">
+          <a href="#" class="card-content">
+            <h5>Rtr. Shreyas Masurkar </h5>
+            <p>GBM</p>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+              </svg>
+            </div>
+  
+          </a>
+        </div>
+      </div>
+ 
+
+      
+
+    </div>
+  </section>
+
+  <!-- developed by section -->
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      fetch('developed_by.html')
+      .then(response => response.text())
+          .then(data => {
+              document.getElementById('developed_by-container').innerHTML = data;
+          });
+  });
+</script>
+
+<div id="developed_by-container" ></div>
+
+<!-- developed by section -->
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+</html>

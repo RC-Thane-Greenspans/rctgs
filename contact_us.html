@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | RCTGS </title>
+    
+    <link rel="icon" href="assests/project_images/Be_You_theme.PNG" type="image/svg+xml" />
+    <style>
+        body {
+    background-color: #f6f1ea; /* Updated background color */
+    padding-top: 85px;
+    color: #333; /* Text color for better contrast */
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif, 'arial';
+    font-weight: 600;
+    font-size: 72px;
+    color: #2c2c2c; /* Darker color for headings */
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif, 'arial';
+    font-weight: 400;
+    font-size: 20px;
+    color: #666; /* Lighter gray for subheadings */
+    line-height: 1.5;
+}
+
+/* ///// inputs /////*/
+
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+    font-size: 0.75em;
+    color: #333; /* Darker gray for labels */
+    top: -5px;
+    -webkit-transition: all 0.225s ease;
+    transition: all 0.225s ease;
+}
+
+.styled-input {
+    float: left;
+    width: 293px;
+    margin: 1rem 0;
+    position: relative;
+    border-radius: 4px;
+}
+
+@media only screen and (max-width: 768px){
+    .styled-input {
+        width: 100%;
+    }
+}
+
+.styled-input label {
+    color: #666; /* Gray for labels */
+    padding: 1.3rem 30px 1rem 30px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    pointer-events: none;
+}
+
+.styled-input.wide { 
+    width: 650px;
+    max-width: 100%;
+}
+
+input,
+textarea {
+    padding: 30px;
+    border: 0;
+    width: 100%;
+    font-size: 1rem;
+    background-color: #fff; /* White background for inputs */
+    color: #333; /* Dark text for readability */
+    border-radius: 4px;
+}
+
+input:focus,
+textarea:focus { 
+    outline: 0; 
+}
+
+input:focus ~ span,
+textarea:focus ~ span {
+    width: 100%;
+    -webkit-transition: all 0.075s ease;
+    transition: all 0.075s ease;
+}
+
+textarea {
+    width: 100%;
+    min-height: 15em;
+}
+
+.input-container {
+    width: 650px;
+    max-width: 100%;
+    margin: 20px auto 25px auto;
+    text-align: center; /* Center-align the container */
+}
+
+.submit-btn {
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #4b8cfb, #3a6ed8); /* Gradient background */
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    border: none; /* Remove default border */
+    transition: all 0.3s ease;
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 1px; /* Slightly spaced letters */
+}
+
+.submit-btn:hover {
+    background: linear-gradient(90deg, #3a6ed8, #4b8cfb); /* Reverse gradient on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.submit-btn:focus {
+    outline: none; /* Remove focus outline */
+}
+
+@media (max-width: 768px) {
+    .submit-btn {
+        width: 100%;
+        display: block;
+        margin: 0 auto; /* Center the button */
+        text-align: center;
+    }
+}
+
+input[type=checkbox] + label {
+    color: #666; /* Gray for checkbox labels */
+    font-style: italic;
+}
+
+input[type=checkbox]:checked + label {
+    color: #f00; /* Red for checked checkbox labels */
+    font-style: normal;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="row">
+            <h4 style="text-align:center">We'd love to hear from you!</h4>
+        </div>
+        <div class="row input-container">
+            <div class="col-xs-12">
+                <div class="styled-input wide">
+                    <input type="text" id="name" required />
+                    <label>Name</label> 
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="styled-input">
+                    <input type="email" id="email" required />
+                    <label>Email</label> 
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="styled-input" style="float:right;">
+                    <input type="text" id="phone" required />
+                    <label>Phone Number</label> 
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="styled-input wide">
+                    <textarea id="message" required></textarea>
+                    <label>Message</label>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="btn-lrg submit-btn" id="send-button">Send Message</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include the EmailJS library -->
+            <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+            <script type="text/javascript">
+                // Initialize EmailJS with your user ID
+                (function(){
+                    // This is your EmailJS user ID (API key). Make sure it's correctly entered.
+                    // Replace "kiOZZzXhSHYwF4lZL" with your actual EmailJS user ID.
+                    emailjs.init("kiOZZzXhSHYwF4lZL"); 
+                })();
+
+    // Add event listener to the "Send Message" button
+    document.getElementById('send-button').addEventListener('click', function() {
+        // Retrieve values from the form inputs
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var phone = document.getElementById('phone').value;
+        var message = document.getElementById('message').value;
+
+        // Check if required fields are filled
+        if (name && email && message) {
+            // Send the email using EmailJS
+            emailjs.send("service_a5n3bnm", "template_tfmwncf", {
+                name: name,  // The sender's name
+                email: email,     // The sender's email
+                phone: phone,     // The sender's phone number (optional)
+                message: message  // The message content
+            }).then(function(response) {
+                // On success, show a success message and clear the form
+                alert("Message sent successfully!");
+                document.getElementById('name').value = "";
+                document.getElementById('email').value = "";
+                document.getElementById('phone').value = "";
+                document.getElementById('message').value = "";
+            }, function(error) {
+                // On failure, show an error message
+                alert("Failed to send message, please try again.");
+            });
+        } else {
+            // If not all required fields are filled, alert the user
+            alert("Please fill in all required fields.");
+        }
+    });
+</script>
+
+</body>
+</html>

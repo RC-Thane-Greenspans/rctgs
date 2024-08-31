@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Add Font Awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <title>Social Media Icons</title>
+    </head>
+<body>
+    <div class="block">
+        <div class="inner">
+            <div class="c-heading c-heading--small follow-us-heading">
+                <div class="c-heading__middle">
+                    <h3 class="heading-5 follow-us-text">Don't Forget <br>to Follow Us.</h3>
+                </div>
+            </div>
+            <ul class="social-media-gallery">
+                <li class="social-media-item">
+                    <a href="https://www.instagram.com/rcthanegreenspans/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li class="social-media-item">
+                    <a href="https://www.linkedin.com/in/rotaract-club-of-thane-greenspans-ba3a81262/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+                <li class="social-media-item">
+                    <a href="https://www.youtube.com/@RotaractClubofThaneGreenSpans" target="_blank"><i class="fab fa-youtube"></i></a>
+                </li>
+                <li class="social-media-item">
+                    <a href="https://x.com/i/flow/login?redirect_after_login=%2FRCTGreenspans" target="_blank"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="social-media-item">
+                    <a href="mailto:rcthanegreenspans@gmail.com?subject=Interest in Joining the Club&body=Hello,%0A%0AI am interested in joining the club and would like to provide my details for further communication.%0A%0AName: [Your Name Here]%0APhone: [Your Phone Number Here]%0AEmail: [Your Email Address Here]%0A%0AThank you,%0A[Your Name]" target="_blank">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </li>
+            </ul>
+    
+            <style>
+                :root {
+                    --primary-color-follow: #f6f1ea;
+                    --instagram-follow: #e4405f;
+                    --linkedin-follow: #0077b5;
+                    --youtube-follow: #ff0000;
+                    --twitter-follow: #55acee;
+                    --gmail-follow: #d93025;
+                    --grey-follow: #D3D3D3;
+                }
+    
+                .follow-us-heading {
+                    text-align: center;
+                    margin-bottom: 60px;
+                    /* Adjust spacing as needed */
+                }
+    
+                .follow-us-text {
+                    font-family: Arial, sans-serif;
+                    font-weight: bold;
+                    color: #333;
+                    font-size: 24px;
+                }
+    
+                .social-media-gallery {
+                    display: flex;
+                    justify-content: center;
+                    /* Center icons horizontally */
+                    gap: 20px;
+                    /* Adjust spacing between icons */
+                    padding: 0;
+                    margin: 0;
+                    gap: 7%;
+                    list-style: none;
+                    background: var(--primary-color-follow);
+                }
+    
+                .social-media-item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+    
+                .social-media-item a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100px;
+                    /* Adjusted width */
+                    height: 100px;
+                    /* Adjusted height */
+                    background: var(--grey-follow);
+                    text-align: center;
+                    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
+                    transition: .5s;
+                    box-shadow: -30px 30px 10px rgba(0, 0, 0, .5);
+                    position: relative;
+                    color: black;
+                    /* Default icon color */
+                }
+    
+                .social-media-item a i {
+                    font-size: 50px;
+                    /* Adjusted icon size */
+                }
+    
+                .social-media-item a:before {
+                    content: '';
+                    position: absolute;
+                    top: 10px;
+                    left: -20px;
+                    height: 100%;
+                    width: 20px;
+                    background: #b2aba3;
+                    transition: .5s;
+                    transform: rotate(0deg) skewY(-45deg);
+                }
+    
+                .social-media-item a:after {
+                    content: '';
+                    position: absolute;
+                    bottom: -20px;
+                    left: -10px;
+                    height: 20px;
+                    width: 100%;
+                    background: var(--grey-follow);
+                    transition: .5s;
+                    transform: rotate(0deg) skewX(-45deg);
+                }
+    
+                .social-media-item:hover a {
+                    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+                    box-shadow: -50px 50px 50px rgba(0, 0, 0, .5);
+                }
+    
+                .social-media-item:hover a .fab {
+                    color: white;
+                }
+    
+                .social-media-item:nth-child(1):hover a {
+                    background: var(--instagram-follow);
+                }
+    
+                .social-media-item:nth-child(1):hover a:before {
+                    background: #e4506b;
+                }
+    
+                .social-media-item:nth-child(1):hover a:after {
+                    background: #e7617a;
+                }
+    
+                .social-media-item:nth-child(2):hover a {
+                    background: var(--linkedin-follow);
+                }
+    
+                .social-media-item:nth-child(2):hover a:before {
+                    background: #009ad9;
+                }
+    
+                .social-media-item:nth-child(2):hover a:after {
+                    background: #0088cc;
+                }
+    
+                .social-media-item:nth-child(3):hover a {
+                    background: var(--youtube-follow);
+                }
+    
+                .social-media-item:nth-child(3):hover a:before {
+                    background: #ff4d4d;
+                }
+    
+                .social-media-item:nth-child(3):hover a:after {
+                    background: #ff3333;
+                }
+    
+                .social-media-item:nth-child(4):hover a {
+                    background: var(--twitter-follow);
+                }
+    
+                .social-media-item:nth-child(4):hover a:before {
+                    background: #64b2ee;
+                }
+    
+                .social-media-item:nth-child(4):hover a:after {
+                    background: #73baf0;
+                }
+    
+                .social-media-item:nth-child(5):hover a {
+                    background: var(--gmail-follow);
+                }
+    
+                .social-media-item:nth-child(5):hover a:before {
+                    background: #c62828;
+                }
+    
+                .social-media-item:nth-child(5):hover a:after {
+                    background: #b71c1c;
+                }
+            </style>
+        </div>
+    </div>
+</body>
+</html>

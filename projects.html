@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Projects | RCTGS</title>
+    
+    <link rel="icon" href="assests/project_images/Be_You_theme.PNG" type="image/svg+xml" />
+    <!-- Include Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Global */
+        body {
+            background: #f6f1ea; /* Primary background color */
+            padding: 40px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        img { max-width: 100%; }
+
+        .carousel-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px; /* Rounded corners for images */
+        }
+
+        .carousel-control-prev, .carousel-control-next {
+            width: 60px;
+            height: 60px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+            transition: background 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .carousel-control-prev:hover, .carousel-control-next:hover {
+            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+        }
+
+        .carousel-control-prev {
+            left: 15px;
+        }
+
+        .carousel-control-next {
+            right: 15px;
+        }
+
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+            display: none;
+        }
+
+        .carousel-control-prev::before, .carousel-control-next::before {
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: white;
+            font-size: 24px;
+        }
+
+        .carousel-control-prev::before {
+            content: '\f053'; /* Font Awesome left arrow */
+        }
+
+        .carousel-control-next::before {
+            content: '\f054'; /* Font Awesome right arrow */
+        }
+
+        /* Container */
+        .container-fluid {
+            background: #ffffff; /* White background for the container */
+            margin: 40px auto;
+            padding: 20px;
+            max-width: 960px;
+            border-radius: 12px; /* Rounded corners for the container */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .container-fluid:hover {
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Page Header */
+        .page-header {
+            background: #f6f1ea; /* Primary background color */
+            padding: 20px;
+            border-bottom: 4px solid #e2cfc1; /* Light brown border */
+            color: #a83b3b; /* Dark red color */
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            border-radius: 12px; /* Rounded corners for header */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(135deg, #f6f1ea, #e2cfc1); /* Gradient background */
+        }
+
+        .page-header h3 {
+            line-height: 1.5rem;
+            color: #a83b3b; /* Dark red color */
+            margin-bottom: 10px;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .page-header p {
+            font-size: 1.2rem;
+            color: #a83b3b; /* Dark red color */
+        }
+
+        /* Carousel Text Section */
+        .carousel-text {
+            padding: 20px;
+            background: #ffffff; /* White background */
+            border-top: 2px solid #a83b3b; /* Dark red border */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .carousel-text h3 {
+            color: #a83b3b; /* Dark red color */
+            margin-top: 0;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .carousel-text p {
+            font-size: 1rem;
+            line-height: 1.6rem;
+            color: #000; /* Black text color for readability */
+        }
+    </style>
+    <!-- Include Font Awesome for custom arrows -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="page-header">
+                    <h3>Our Projects</h3>
+                    <p>Showcasing the impact of our work</p>
+                </div>
+                
+                <div id="myCarousel" class="carousel slide">
+                    <div class="carousel-inner">
+
+                        <!-- rakhi -->
+                        <div class="carousel-item active">
+                            <a href="#"><img src="assests/project_images/rakhi_with_rakshaks.jpg" class="d-block w-100" alt="rakhi with rakshaks"></a>
+                            <div class="carousel-text">
+                                <h3>Rakshabandhan with Rakshaks</h3>
+                                <p>On the auspicious occasion of Rakshabandhan, our Rotaract Club celebrated Rakshabandhan by honoring the dedicated police officers of Thane. We organized a special event where we tied colorful rakhis to police personnel throughout the city as a gesture of appreciation for their unwavering commitment to keeping our community safe. This heartfelt celebration not only expressed our gratitude but also strengthened the bond between the community and its real-life heroes. It was a day of joy and recognition, bringing smiles to the faces of those who work tirelessly to protect us. 🌟🪔👮‍♂️</p>
+                            </div>
+                        </div>
+
+                        <!-- drop of hope 2024 -->
+                        <div class="carousel-item">
+                            <a href="#"><img src="assests/project_images/drop_of_hope.jpg" class="d-block w-100" alt="DTS"></a>
+                            <div class="carousel-text">
+                                <h3>Drop Of Hope</h3>
+                                <p>Our Rotaract Club, in collaboration with our parent Rotary Club of Thane Greenspans, successfully organized a blood donation drive on 14th July, 2024 that turned out to be a tremendous success. With the support and generosity of our amazing donors, we collected an incredible 38 units of blood! 🩸❤️</p>
+                            </div>
+                        </div>
+
+                        <!-- DTS 2024 -->
+                        <div class="carousel-item">
+                            <a href="#"><img src="assests/project_images/DTS_Project.jpg" class="d-block w-100" alt="DTS"></a>
+                            <div class="carousel-text">
+                                <h3>Directors Training Session</h3>
+                                <p>We are thrilled to announce the successful conclusion of our Directors' Training Session 2024, held on Sunday, 21st July 2024 at the Rotary School of Ambernath. This transformative event was a testament to our commitment to learning and leadership within Rotaract District 3142.</p>
+                            </div>
+                        </div>
+
+                        <!-- One hit away -->
+                        <div class="carousel-item">
+                            <a href="#"><img src="assests/project_images/one_hit_away.jpg" class="d-block w-100" alt="One Hit Away 4.0"></a>
+                            <div class="carousel-text">
+                                <h3>One Hit Away 4.0</h3>
+                                <p>Celebrating a great time at One Hit Away 4.0 with this fantastic team! Here’s to the memories we made together. 🌟
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- GBM -->
+                        <div class="carousel-item">
+                            <a href="#"><img src="assests/project_images/GBM1.jpg" class="d-block w-100" alt="GBM 1"></a>
+                            <div class="carousel-text">
+                                <h3>Club's General Body Meeting</h3>
+                                <p>Great energy and inspiring discussions at our recent Club General Body Meeting!
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Daptar Session -->
+                        <div class="carousel-item">
+                            <a href="#"><img src="assests/project_images/daptar_session.jpg" class="d-block w-100" alt="Daptar Session"></a>
+                            <div class="carousel-text">
+                                <h3>Daptar Session</h3>
+                                <p>
+                                    Our Rotaract Club's Daptar Ambassador at a NMMC government school. The Daptar Ambassador led an engaging and educational session, introducing the students to the innovative Daptar program. This session aimed to enhance the students' learning experience with interactive activities and educational tools designed to make learning fun and effective. The enthusiasm and curiosity of the kids made the event a resounding success, setting a positive tone for future sessions and educational growth. 📚✨
+                                </p>
+                            </div>
+                        </div> 
+
+                        <!-- BRINGING JOY TO KARANJAON -->
+                        <div class="carousel-item">
+                            <a href="#"><img src="assests/project_images/KARANJAON.jpg" class="d-block w-100" alt="BRINGING JOY TO KARANJAON"></a>
+                            <div class="carousel-text">
+                                <h3>BRINGING JOY TO KARANJAON</h3>
+                                <p>our Rotaract Club, in collaboration with the Rotary Club of Thane Greenspans, brought festive cheer to the village of Karanjaon. To celebrate Diwali, we organized a special visit where we distributed clothes and traditional Diwali faral to the village residents. The event was a heartwarming experience that spread joy and ensured that everyone in the community could partake in the festive spirit. The smiles and gratitude from the villagers made this Diwali truly memorable for all involved. 🪔🎉👕
+                                </p>
+                            </div>
+                        </div> 
+
+                        <!-- Click to flick -->
+                        <div class="carousel-item">
+                            <a href="#"><img src="assests/project_images/photography.jpg" class="d-block w-100" alt="click to flick"></a>
+                            <div class="carousel-text">
+                                <h3>Click to Flick 🤳📸</h3>
+                                <p>Our Rotaract Club hosted an exciting workshop titled "Click to Flick" aimed at improving smartphone photography skills. Participants learned a range of tips and tricks for taking stunning photos using both iPhones and Android phones. The workshop covered essential techniques such as composition, lighting, and leveraging smartphone features to capture picture-perfect moments. Attendees left inspired and equipped with new skills to elevate their photography, making it a truly enriching experience for all involved. 📸✨
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Barbenheimer -->
+                        <div class="carousel-item">
+                            <a href="#"><img src="assests/project_images/barbenheimer.jpg" class="d-block w-100" alt="Barbenheimer"></a>
+                            <div class="carousel-text">
+                                <h3>BARBENHEIMER THEME PARTY 🖤🩷</h3>
+                                <p>Our Rotaract Club hosted a vibrant and stylish "Barbenheimer Theme Party" that brought together the best of two iconic worlds. With a playful fusion of glamorous Barbie aesthetics and the edgy vibes of Oppenheimer, the event featured themed decorations, costumes, and activities that delighted everyone in attendance. Guests embraced the creative theme, showcasing a blend of elegance and boldness, while enjoying a night filled with music, dancing, and memorable moments. It was a fantastic celebration of fun and imagination, where everyone left with great memories and a touch of party magic. 🎉🖤🩷
+                                </p>
+                            </div>
+                        </div> 
+
+                        <!-- Linkedin MAsterclass -->
+                        <div class="carousel-item">
+                            <a href="#"><img src="assests/project_images/linkedin_mclass.jpg" class="d-block w-100" alt="LinkedIn Masterclass"></a>
+                            <div class="carousel-text">
+                                <h3>LinkedIn Masterclass</h3>
+                                <p>Discover the magic of personal branding, profile optimization and crafting engaging content with our expert speaker Ami Savla Hemani </p>
+                            </div>
+                        </div>
+
+                        <!-- Forgive to Flourish -->
+                        <div class="carousel-item">
+                            <a href="#"><img src="assests/project_images/Global_forgiveness_Day.jpg" class="d-block w-100" alt="Forgive to Flourish"></a>
+                            <div class="carousel-text">
+                                <h3>Forgive to Flourish</h3>
+                                <p>On 6th July, over 100 participants joined us for the FORGIVE TO FLOURISH session. A special thanks to Gagandeep Singh Khurana for his inspiring insights on forgiveness.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Strike and dodge -->
+                        <div class="carousel-item">
+                            <a href="#"><img src="assests/project_images/strike_derby.jpg" class="d-block w-100" alt="Strike and Dodge Derby"></a>
+                            <div class="carousel-text">
+                                <h3>Strike and Dodge Derby</h3>
+                                <p>
+                                </p>
+                            </div>
+                        </div> 
+
+
+
+                    </div>
+                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Include jQuery and Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    
+</body>
+
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | RCTGS</title>
+    
+    <link rel="icon" href="assests/project_images/Be_You_theme.PNG" type="image/svg+xml" />
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+        }
+    
+        body {
+            background-color: #f6f1ea;
+        }
+    
+        h1{
+            font-size: 2.5rem;
+            font-family: 'Montserrat';
+            font-weight: normal;
+            color: #444;
+            text-align: center;
+            margin: 2rem 0;
+        }
+    
+        .wrapper{
+            width: 90%;
+            margin: 0 auto;
+            max-width: 80rem;
+        }
+
+        .cols {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .col {
+            width: calc(25% - 2rem);
+            margin: 1rem;
+            cursor: pointer;
+        }
+
+        .container {
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+
+        .front, .back {
+            background-size: cover;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            background-position: center;
+            transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+            backface-visibility: hidden;
+            text-align: center;
+            min-height: 280px;
+            height: auto;
+            color: #fff;
+            font-size: 1.5rem;
+        }
+
+        .back {
+            background: linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        .front:after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            content: '';
+            display: block;
+            opacity: 0.6;
+            background-color: #000;
+            backface-visibility: hidden;
+            border-radius: 10px;
+        }
+
+        .inner {
+            transform: translateY(-50%) translateZ(60px) scale(0.94);
+            top: 50%;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            padding: 2rem;
+            box-sizing: border-box;
+            perspective: inherit;
+            z-index: 2;
+        }
+
+        .container .back {
+            transform: rotateY(180deg);
+            transform-style: preserve-3d;
+        }
+
+        .container .front {
+            transform: rotateY(0deg);
+            transform-style: preserve-3d;
+        }
+
+        .container:hover .back {
+            transform: rotateY(0deg);
+            transform-style: preserve-3d;
+        }
+
+        .container:hover .front {
+            transform: rotateY(-180deg);
+            transform-style: preserve-3d;
+        }
+
+        .front .inner p {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .front .inner p:after {
+            content: '';
+            width: 4rem;
+            height: 2px;
+            position: absolute;
+            background: #C6D4DF;
+            display: block;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            bottom: -0.75rem;
+        }
+
+        .front .inner span {
+            color: rgba(255, 255, 255, 0.7);
+            font-family: 'Montserrat';
+            font-weight: 300;
+        }
+
+        @media screen and (max-width: 64rem) {
+            .col {
+                width: calc(33.333333% - 2rem);
+            }
+        }
+
+        @media screen and (max-width: 48rem) {
+            .col {
+                width: calc(50% - 2rem);
+            }
+        }
+
+        @media screen and (max-width: 32rem) {
+            .col {
+                width: 100%;
+                margin: 0 0 2rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>More about RC Thane Greenspans!!!</h1>
+        <div class="cols">
+
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url('assests/project_images/Be_You_theme.PNG');">
+                        <div class="inner">
+                            <p>Year Theme</p>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+
+                            <p>
+                                <ul style="list-style-type:square">
+                                <li>Empowerment</li>
+                                <li>Mindfulness</li>
+                                <li>Resilience</li>
+                                <li>Self Discovery</li>
+                                <li>Innovation</li>
+                                <li>Inclusivity</li>
+                                <li>Personal Growth</li>
+                                </ul>
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(https://images.unsplash.com/photo-1535231540604-72e8fbaf8cdb?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">
+                        <div class="inner">
+                            <p>Years in Active</p>
+                            <!-- <span>Lorem ipsum</span> -->
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <h1>4th Year</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(https://images.unsplash.com/photo-1524608167924-8305dd66256b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">
+                        <div class="inner">
+                            <p>Active Members</p>
+                            <!-- <span>Lorem ipsum</span> -->
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <h1>26 Members</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(https://images.unsplash.com/photo-1614016296767-63446ab979c7?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">
+                        <div class="inner">
+                            <p>Projects Completed</p>
+                            <!-- <span></span> -->
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <h1>30+ projects</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(https://images.unsplash.com/photo-1516383607781-913a19294fd1?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">
+                        <div class="inner">
+                            <p>Daptar Ambassadors</p>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <ul style="list-style-type:square">
+                                <li>Rtr. Tanmay Gupte</li>
+                                <li>Rtr. Snehal Kamble</li>
+                                <li>Rtr. Vedang Khatate</li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(https://images.unsplash.com/photo-1583782385538-c55baa9420ff?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">
+                        <div class="inner">
+                            <p>Core Values</p>
+                            <!-- <span>Lorem ipsum</span> -->
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>
+                                <ul style="list-style-type:square">
+                                <li>Integrity</li>
+                                <li>Commitment</li>
+                                <li>Opportunity</li>
+                                <li>Impact</li>
+                                <li>Inclusion</li>
+                                </ul>
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(https://images.unsplash.com/photo-1520416862-8b4726be4a40?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">
+                        <div class="inner">
+                            <p>Thrust Areas</p>
+                            <!-- <span>Lorem ipsum</span> -->
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>
+                                <ul style="list-style-type:square">
+                                    <li>Education</li>
+                                    <li>Environment</li>
+                                    <li>Branding</li>
+                                    <li>Membership</li>
+                                    <li>Empowerment</li>
+                                    <li>Mental Health</li>
+                                    </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            
+            
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(https://images.unsplash.com/photo-1675897386680-a0645eb60784?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">
+                        <div class="inner">
+                            <p>Past Presidents of Club</p>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <ul style="list-style-type:square">
+                                <li>Rtr. Arpit Khedekar(2023-24)</li>
+                                <li>Rtr. Kanak Gupte(2022-23)</li>
+                                <li>Rtr. Prayag Tikekar(2021-22)</li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- developed by section -->
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        fetch('developed_by.html')
+        .then(response => response.text())
+            .then(data => {
+                document.getElementById('developed_by-container').innerHTML = data;
+            });
+    });
+</script>
+
+<div id="developed_by-container" ></div>
+
+<!-- developed by section -->
+</body>
+</html>
